@@ -7,7 +7,7 @@ txtInput.addEventListener("keydown",function(event){
      
         
         if(event.key === "Enter"){
-            
+
             event.preventDefault();
 
             if (txtInput.value != "" ){
@@ -33,6 +33,12 @@ txtInput.addEventListener("keydown",function(event){
         
                 // add Attribute class for iElm tag and value of class
                 iElm.setAttribute("class","fa fa-trash-o delete");
+
+                // add click eventlistener to <i></i> tag for delete parent element
+                iElm.addEventListener("click", function(){
+                    iElm.parentElement.remove()
+
+                })
         
                 // append iElm to liElm
                 liElm.appendChild(iElm);
