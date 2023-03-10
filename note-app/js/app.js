@@ -66,6 +66,7 @@ btnSave.addEventListener("click",function(){
 
 btnDelete.addEventListener("click", function(){
     txtInput.value = "";
+    txtInput.style.backgroundColor = "rgb(255,255,255)";
 })
 
 
