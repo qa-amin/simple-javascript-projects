@@ -71,3 +71,11 @@ convertBtn.addEventListener("click", function(){
     }
 })
 
+// select Reset Button with .resetButton class
+let resetButton = document.querySelector(".resetButton")
+
+resetButton.addEventListener("click", function(){
+    inputElm.value = "";
+    resultElm.innerHTML = "";
+})
+
